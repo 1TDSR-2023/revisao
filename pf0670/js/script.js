@@ -80,7 +80,18 @@ console.log(nomesAlunos);
 nomesAlunos.reverse();
 console.log(nomesAlunos);
 
+//Alterando elementos do array de alunos com splice.
+nomesAlunos.splice(1,2,"Carlos","Paulo");
+console.log(nomesAlunos);
 
+//Alterando elementos do array de alunos com splice.
+nomesAlunos.splice(3,3);
+console.log(nomesAlunos);
 
+//Adicionando elementos no array de alunos com unshift.
+nomesAlunos.unshift("Caubi","Kiko");
+console.log(nomesAlunos);
 
-
+//Removendo elementos no array de alunos com shift.
+nomesAlunos.shift();
+console.log(nomesAlunos);
