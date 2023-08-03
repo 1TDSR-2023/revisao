@@ -66,17 +66,32 @@ alunos.forEach(aluno => console.log(aluno.nome));
 alunos.pop();
 console.log(alunos);
 
-
-//Criando um novo array de alunos a partir do array de alunos.
+//Criando um novo array de alunos a partir do array de alunos
 let nomesAlunos = alunos.map(aluno => aluno.nome);
 
-//imprimir o novo array de nome de alunos.
+//Imprimir o novo array de nomes de alunos.
 console.log(nomesAlunos);
 
 //Colocando em ordem alfabética o novo array de nomes de alunos.
 nomesAlunos.sort();
 console.log(nomesAlunos);
 
-//invertendo a ordem do novo array de nomes de alunos.
+//Invertendo a ordem do novo array de nomes de alunos.
 nomesAlunos.reverse();
+console.log(nomesAlunos);
+
+//Alterando elementos do array de alunos com splice.
+nomesAlunos.splice(1,2,"Carlos","Paulo");
+console.log(nomesAlunos);
+
+//Alterando elementos do array de alunos com splice.
+nomesAlunos.splice(3,3);
+console.log(nomesAlunos);
+
+//Adicionando elementos no array de alunos com unshift.
+nomesAlunos.unshift("Caubi","Kiko");
+console.log(nomesAlunos);
+
+//Removendo elementos no array de alunos com shift.
+nomesAlunos.shift();
 console.log(nomesAlunos);
