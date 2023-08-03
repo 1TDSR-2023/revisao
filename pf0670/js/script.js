@@ -59,5 +59,17 @@ console.log(nomesAlunos);
 nomesAlunos.reverse();
 console.log(nomesAlunos);
 
+//alterando elementos do array de alunos com splice p mexer no meio
+nomesAlunos.splice(1, 2, "Carlos", "Pedro");
+console.log(nomesAlunos);
+
+//adicionando elementos no inicio do array com unshift
+nomesAlunos.unshift("Maddu", "Maze");
+console.log(nomesAlunos);
+
+//removendo elementos no final da lista do array com shift
+nomesAlunos.shift();
+console.log(nomesAlunos);
+
 
 //JASON = JavaScript object 
