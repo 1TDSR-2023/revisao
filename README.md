@@ -1,2 +1,2 @@
 # revisao
-Revisando conceitos de estruturas de dados de JavaScript.
+Revisando conceitos de estruturas de dados de JavaScript..
