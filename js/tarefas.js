@@ -39,7 +39,13 @@ botaoAddTarefa.addEventListener("click", (evento)=>{
     
         evt.target.parentNode.remove();
 
+        listaTarefasArray.forEach( tarefa=>{
+            if (tarefa == evt.target.parentNode.textContent.split(" ")[0]){
+                listaTarefasArray.splice(listaTarefasArray.indexOf(tarefa),1)
+            }
+        });
         
+
         console.log(evt.target.parentNode.textContent.split(" ")[0]);
 
 
