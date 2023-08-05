@@ -13,11 +13,21 @@ botaoAddTarefa.addEventListener("click", (evento)=>{
     
     //Inserindo a nova tarefa no array com o método push();
     listaTarefasArray.push(inputTarefa.value);
-
+    
+    //Recuperando a lista UL através do id com querySelector();
     const listaTarefasUL = document.querySelector("#lista-tarefas");
 
+    //Elemento li criado.
     let li = document.createElement("li");
-        
+
+    //Adiocionando texto dentro do elemento LI;
+    li.textContent = inputTarefa.value;
+
+    //Adicionando o elemento li a UL.
+    listaTarefasUL.appendChild(li);
+
     console.log(listaTarefasArray);
     inputTarefa.value = "";
 });
+
+
