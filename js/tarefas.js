@@ -26,6 +26,25 @@ botaoAddTarefa.addEventListener("click", (evento)=>{
     //Adicionando o elemento li a UL.
     listaTarefasUL.appendChild(li);
 
+    //Criando o bot"ao de excluir tarefas.
+    let botaoApagaTarefa = document.createElement("button");
+
+    //Inserindo o nó de texto do botão
+    botaoApagaTarefa.textContent = " x ";
+
+    //Adicionando um botão para apagar a tarefa!
+    li.appendChild(botaoApagaTarefa);
+
+    botaoApagaTarefa.addEventListener("click",(evt)=>{
+    
+        evt.target.parentNode.remove();
+
+        
+        console.log(evt.target.parentNode.textContent.split(" ")[0]);
+
+
+    })
+
     console.log(listaTarefasArray);
     inputTarefa.value = "";
 });
