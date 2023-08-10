@@ -95,3 +95,5 @@ console.log(nomesAlunos);
 //Removendo elementos no array de alunos com shift.
 nomesAlunos.shift();
 console.log(nomesAlunos);
+
+
