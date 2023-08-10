@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>RM550231</title>
+    <title>Coded By PF0670</title>
+    <!-- JS -->
+        <script src="./js/tarefas.js" defer></script>
+    <!-- JS -->
     
-    <script src="../js/arrays.js" defer></script>
 </head>
 <body>
-    
-    <h2>Lista De Tarefas</h2>
 
-<form class="form-tarefas">
-    <input type="text" id="caixa" placeholder="Digite uma tarefa">
-    <button type="button" onclick="adicionarTarefa()"> Adicionar </button>
-</form>
+    <h1>MINHAS TAREFAS</h1>
 
-<ul id="lista-tarefas"></ul>
+    <div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Cadastro de Tarefas</legend>
+                <div>
+                    <label for="idTarefa">Nova Tarefa</label>
+                    <input type="text" name="tarefa" id="idTarefa" placeholder="Digite o nome de sua Tarefa">
+                </div>
+                <div>
+                    <button type="submit" id="btnAddTarefa">Adicionar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <ul id="lista-tarefas">
+
+        </ul>
+    </div>
 
 </body>
 </html>
