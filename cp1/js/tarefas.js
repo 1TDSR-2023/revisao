@@ -14,4 +14,8 @@ btnAddTarefa.addEventListener("click", (evento) => {
     listaTarefasArray.push(inputAutor.value);
     listaTarefasArray.push(inputDepartamento.value);
     listaTarefasArray.push(inputImportancia.value);
-}); 
+
+    
+    console.log(listaTarefasArray);
+    inputDescricao.value = "";
+});
