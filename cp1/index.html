@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+
+    <script src="./js/tarefas.js"></script>
+</head>
+<body>
+    <h1>Lista de tarefas</h1>
+    <form id="listaFormulario" method="POST">
+        <label for="listaDescricao">Descrição:</label>
+        <input id="listaDescricao" name="Descricao" type="text">
+
+        <label for="listaAutor">Autor:</label>
+        <input id="listaAutor" name="autor" type="text">
+
+        <label for="listaDepartamento">Departamento:</label>
+        <input id="listaDepartamento" name="departamento" type="text">
+
+        <label for="listaImportancia">Importancia:</label>
+        <input id="listaImportancia" name="importancia" type="text">
+    </form>
+
+    <button type="submit" id="btnAddTarefa">Adicionar tarefa</button>
+    
+</body>
+</html>
