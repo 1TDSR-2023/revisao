@@ -9,7 +9,9 @@ botaoAddTarefa.addEventListener("click", (evento) => {
         descricao: document.querySelector("#idTarefa").value,
         autor: document.querySelector("#idAutor").value,
         departamento: document.querySelector("#idDepartamento").value,
-        importancia: document.querySelector("#idImportancia").value
+        importancia: document.querySelector("#idImportancia").value,
+        valor: document.querySelector("#idValor").value,
+        duracao: document.querySelector("#idDuracao").value
     };
 
     listaTarefasArray.push(objListaTarefas);
@@ -20,7 +22,7 @@ botaoAddTarefa.addEventListener("click", (evento) => {
 
     listaTarefasArray.forEach((tarefa) => {
         const li = document.createElement("li");
-        li.textContent = `Descrição: ${tarefa.descricao}, Autor: ${tarefa.autor}, Departamento: ${tarefa.departamento}, Importância: ${tarefa.importancia}`;
+        li.textContent = `Descrição: ${tarefa.descricao}, Autor: ${tarefa.autor}, Departamento: ${tarefa.departamento}, Importância: ${tarefa.importancia}, Valor a parte: ${tarefa.valor}, Duracao a parte: ${tarefa.valor}`;
 
         const botaoApagaTarefa = document.createElement("button");
         botaoApagaTarefa.textContent = " x ";
@@ -38,3 +40,5 @@ botaoAddTarefa.addEventListener("click", (evento) => {
 
     console.log(listaTarefasArray);
 });
+
+//Organizar as tarefas por importancia.
