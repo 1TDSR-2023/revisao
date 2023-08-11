@@ -18,12 +18,17 @@
             <fieldset>
                 <legend>Tabela</legend>
                 <div>
-                    <label for="idTarefa">Tarefa</label>
+                    <label for="idTarefa">Descricao:</label>
                     <input type="text" name="tarefa" id="idTarefa" placeholder="Digite a descrição">
+                    <label>Autor:</label>
                     <input type="text" name="autor" id="idAutor" placeholder="Digite o autor">
+                    <label>Departamento:</label>
                     <input type="text" name="departamento" id="idDepartamento" placeholder="Digite o departamento">
-                    <input type="text" name="importancia" id="idImportancia" placeholder="Digite a importancia">
-                    <input type="text" name="valor" id="idValor" placeholder="Digite o valor">
+                    <label>Importancia:</label>
+                    <input type="number" name="importancia" id="idImportancia" placeholder="Digite a importancia">
+                    <label>Valor:</label>
+                    <input type="number" name="valor" id="idValor" placeholder="Digite o valor">
+                    <label>Duracao:</label>
                     <input type="text" name="duracao" id="idDuracao" placeholder="Digite a duracao">
                 </div>
                 <div>
@@ -32,13 +37,17 @@
             </fieldset>
         </form>
     </div>
-
-
+    
 
     <div>
+    <h3>Tarefas</h3>
         <ul id="lista-tarefas">
 
         </ul>
+    </div>
+    <div>
+        <h3>Organização por importancia.</h3>
+        <ul id="tarefasPorImportancia"></ul>
     </div>
 
 </body>

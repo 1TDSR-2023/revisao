@@ -42,3 +42,4 @@ botaoAddTarefa.addEventListener("click", (evento) => {
 });
 
 //Organizar as tarefas por importancia.
+
