@@ -1,21 +1,28 @@
-let listaTarefasArray = []
-const listaFormulario = document.getElementById('#listaFormulario');
+const listaTarefasArray = []
+const tarefas = []
+const listaImportancia = document.getElementById('listaDeImportancia');
 
-const btnAddTarefa = document.querySelector("#btnAddTarefa");
-btnAddTarefa.addEventListener("click", (evento) => {
-    evento.preventDefault();
 
+//Ação para o botão
+
+function adicionarTarefa(){
     const inputDescricao = document.querySelector("#listaDescricao");
     const inputAutor = document.querySelector("#listaAutor");
     const inputDepartamento = document.querySelector("#listaDepartamento");
     const inputImportancia = document.querySelector("#listaImportancia");
 
+//Inserindo a nova tarefa no array com o método push();
     listaTarefasArray.push(inputDescricao.value);
     listaTarefasArray.push(inputAutor.value);
     listaTarefasArray.push(inputDepartamento.value);
     listaTarefasArray.push(inputImportancia.value);
 
-    
-    console.log(listaTarefasArray);
-    inputDescricao.value = "";
-});
+
+    let li = document.createElement("li");
+    li.textContent = inputDescricao.value;
+    li.textContent = inputAutor.value;
+    li.textContent =  inputDepartamento.value;
+    li.textContent = inputImportancia.value;
+    listaImportancia.appendChild(li);
+
+}

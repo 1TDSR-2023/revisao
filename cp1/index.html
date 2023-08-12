@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas</title>
 
-    <script src="./js/tarefas.js"></script>
+    <script src="./js/tarefas.js" defer></script>
 </head>
 <body>
     <h1>Lista de tarefas</h1>
     <div>
         <form action="#" method="get">
-    </div>
-    <div>
-        <label for="listaDescricao">Descrição:</label>
-        <input id="listaDescricao" name="Descricao" type="text">
+    
+        <label for="descricao">Descrição:</label>
+        <input id="listaDescricao" name="descricao" type="text">
 
-        <label for="listaAutor">Autor:</label>
+        <label for="autor">Autor:</label>
         <input id="listaAutor" name="autor" type="text">
 
-        <label for="listaDepartamento">Departamento:</label>
+        <label for="departamento">Departamento:</label>
         <input id="listaDepartamento" name="departamento" type="text">
 
-        <label for="listaImportancia">Importancia:</label>
+        <label for="importancia">Importancia:</label>
         <input id="listaImportancia" name="importancia" type="text">
+
+        <button onclick="adicionarTarefa()">Adicionar tarefa</button>
+        </form>
     </div>
-    <div>
-    <button type="submit" id="btnAddTarefa">Adicionar tarefa</button>
-    </div>
-</form>
-</div>
 <div>
-    <table>
-        <tr>
-            <td></td>
-        </tr>
-    </table>
+    <h2>Ordem de importância.</h2>
+    <ul id="listaDeImportancia"></ul>
 </div>
+<table id="tabela">
+    <tr>
+        <td>Descrição</td>
+        <td>Autor</td>
+        <td>Departamento</td>
+        <td>Importancia</td>
+    </tr>
+</table>
 </body>
 </html>
