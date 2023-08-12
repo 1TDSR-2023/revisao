@@ -120,3 +120,5 @@ function atualizarListaImportancia() {
     listaImportancia.appendChild(li);
   });
 }
+
+console.log(tarefas);
