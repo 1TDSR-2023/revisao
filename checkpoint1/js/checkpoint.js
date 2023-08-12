@@ -41,5 +41,25 @@ botaoAddTarefa.addEventListener("click", (evento) => {
     console.log(listaTarefasArray);
 });
 
-//Organizar as tarefas por importancia.
+//Tentativa de organizar as tarefas por importancia...
+
+// const listaTarefasUL2 = document.querySelector("#tarefasPorImportancia");
+// listaTarefasUL2.innerHTML = ""; // limpa a lista.
+
+// function ordenarListaPorImportancia() {
+//     listaTarefasArray.sort((a, b) => b.importancia - a.importancia);
+//     atualizarImportancias();
+//   }
+   
+//   //atualizando a lista de importância
+  
+//   function atualizarImportancias() {
+//     listaImportancia.innerHTML = '';
+
+//     listaTarefasArray.forEach(tarefaDois => {
+//       const li2 = document.createElement('li');  
+//       li2.textContent = `Descrição: ${tarefaDois.descricao.value}`;
+//       tarefasPorImportancia.appendChild(li2);
+//     });
+//   }
 
